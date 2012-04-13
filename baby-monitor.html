@@ -1,15 +1,18 @@
 <head>
-  <title>baby-monitor</title>
+  <title>Baby monitor</title>
+  <script src="http://js.cdn.tl/sugar-1.2.3.min.js"></script>
 </head>
 
 <body>
-  {{> hello}}
+  <h1>Monitor your baby via the intertubes</h1>
+  {{> diaper_changes}}
 </body>
 
-<template name="hello">
-  <div class="hello">
-    <h1>Hello World!</h1>
-    {{greeting}}
+<template name="diaper_changes">
+  <div class="diaper_changes">
+    <p>
+      Diaper was last changed {{lastDiaperChangedDisplay}}
+    </p>
     <input type="button" value="Click" />
   </div>
 </template>
